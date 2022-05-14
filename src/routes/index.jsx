@@ -10,6 +10,7 @@ const AppRoutes = () => {
         <Route path="/">
           <Route index element={<HomePage />} />
           <Route path="history" element={<History />} />
+          <Route path="history/:id" element={<History />} />
         </Route>
       </Routes>
     </BrowserRouter>

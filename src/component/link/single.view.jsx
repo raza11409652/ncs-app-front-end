@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import { copyToClipboard, downloadBase64File } from "../../utils/qr.util";
 
 const SingleLinkView = ({ item }) => {
@@ -27,6 +28,9 @@ const SingleLinkView = ({ item }) => {
           Download
         </button>
       </div>
+      <NavLink className={"btn btn-primary"} to={`history/${item["_id"]}`}>
+        View Visit history
+      </NavLink>
     </div>
   );
 };
